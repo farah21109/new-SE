@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Technology</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img src="https://matrusri.edu.in/wp-content/uploads/2021/11/cropped-MECS-LOGO-192x192.jpg" alt="University Logo">
+                <div class="logo-text">
+                    <h1>Matrusri Engineering College</h1>
+                    <p>An Autonomous Institution | Affiliated to Osmania University</p>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">About</a>
+                        <div class="dropdown-content">
+                            <a href="#">Overview</a>
+                            <a href="#">Campus</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Academics</a>
+                        <div class="dropdown-content">
+                            <a href="#">Undergraduate</a>
+                            <a href="#">Research</a>
+                            <a href="#">Departments</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Admissions</a>
+                        <div class="dropdown-content">
+                            <a href="#">Apply Now</a>
+                            <a href="#">Requirements</a>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="clubs.html">Clubs</a>
+                        <div class="dropdown-content">
+                            <a href="clubs.html#dance">Dance Club</a>
+                            <a href="clubs.html#music">Music Club</a>
+                            <a href="clubs.html#sports">Sports Club</a>
+                            <a href="clubs.html#orators">Orators Club</a>
+                            <a href="clubs.html#mcc">MCC Club</a>
+                            <a href="clubs.html#coding">Coding Club</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Slideshow -->
+    <section class="hero-slideshow">
+        <div class="slides">
+            <div class="slide active">
+                <div class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/api/placeholder/1200/600');">
+                    <div class="hero-content">
+                        <h1>Shaping Tomorrow's Leaders</h1>
+                        <p>Join a community dedicated to innovation, research, and academic excellence</p>
+                        <a href="#" class="cta-button">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/api/placeholder/1200/600?text=Campus');">
+                    <div class="hero-content">
+                        <h1>World-Class Campus</h1>
+                        <p>State-of-the-art facilities designed to enhance learning and research</p>
+                        <a href="#" class="cta-button">Tour Campus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/api/placeholder/1200/600?text=Research');">
+                    <div class="hero-content">
+                        <h1>Leading Through Research</h1>
+                        <p>Pioneering solutions to global challenges through innovation</p>
+                        <a href="#" class="cta-button">Explore Research</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation Arrows -->
+        <button class="slide-arrow prev-arrow">&#10094;</button>
+        <button class="slide-arrow next-arrow">&#10095;</button>
+        
+        <!-- Navigation Dots -->
+        <div class="slide-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- Announcement Section -->
+    <section class="announcements">
+        <div class="announcement-container">
+            <div class="announcement-header">
+                <h2>Important Announcements</h2>
+                <div class="announcement-controls">
+                    <button class="announcement-btn prev-announcement">&#10094;</button>
+                    <button class="announcement-btn next-announcement">&#10095;</button>
+                </div>
+            </div>
+            <div class="announcement-slider">
+                <div class="announcement-item active">
+                    <div class="announcement-icon">📣</div>
+                    <div class="announcement-content">
+                        <h3>Fall 2025 Admissions Now Open</h3>
+                        <p>Applications for undergraduate and graduate programs are now being accepted. Early decision deadline: December 15, 2024.</p>
+                        <a href="#" class="announcement-link">Learn More</a>
+                    </div>
+                    <div class="announcement-date">May 1, 2025</div>
+                </div>
+                <div class="announcement-item">
+                    <div class="announcement-icon">🏆</div>
+                    <div class="announcement-content">
+                        <h3>University Ranks #1 in Computer Science</h3>
+                        <p>Our Computer Science department has been ranked #1 nationally for the third consecutive year.</p>
+                        <a href="#" class="announcement-link">View Rankings</a>
+                    </div>
+                    <div class="announcement-date">April 28, 2025</div>
+                </div>
+                <div class="announcement-item">
+                    <div class="announcement-icon">📅</div>
+                    <div class="announcement-content">
+                        <h3>Summer Research Symposium</h3>
+                        <p>Join us for our annual Summer Research Symposium on June 15-17, 2025. Registration closes May 30.</p>
+                        <a href="#" class="announcement-link">Register Now</a>
+                    </div>
+                    <div class="announcement-date">April 25, 2025</div>
+                </div>
+            </div>
+            <div class="announcement-dots">
+                <span class="announcement-dot active" onclick="currentAnnouncement(0)"></span>
+                <span class="announcement-dot" onclick="currentAnnouncement(1)"></span>
+                <span class="announcement-dot" onclick="currentAnnouncement(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="section-title">
+            <h2>Why Choose Us</h2>
+            <p>We offer a transformative educational experience that prepares students for the challenges of tomorrow</p>
+        </div>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🔬</div>
+                <h3>Cutting-Edge Research</h3>
+                <p>Our institution is at the forefront of technological innovation with state-of-the-art research facilities and renowned faculty members leading groundbreaking projects.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎓</div>
+                <h3>Academic Excellence</h3>
+                <p>With rigorous academic programs designed to challenge and inspire, our students receive an education that combines theoretical knowledge with practical skills.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3>Global Perspective</h3>
+                <p>Our diverse community and international partnerships provide students with a global outlook essential for success in today's interconnected world.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news">
+        <div class="news-container">
+            <div class="section-title">
+                <h2>Latest News</h2>
+                <p>Stay updated with the recent happenings, achievements, and announcements</p>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="news-content">
+                        <div class="news-date">May 1, 2025</div>
+                        <h3>University Secures $5M Research Grant</h3>
+                        <p>Our Computer Science department has received a prestigious grant to advance research in artificial intelligence and machine learning.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="news-content">
+                        <div class="news-date">April 25, 2025</div>
+                        <h3>International Conference on Technology</h3>
+                        <p>Join us for the annual conference featuring renowned speakers from around the world discussing emerging technologies.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="news-content">
+                        <div class="news-date">April 18, 2025</div>
+                        <h3>New Robotics Lab Inaugurated</h3>
+                        <p>The state-of-the-art robotics laboratory will facilitate advanced research and learning opportunities for students.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <h3>5000+</h3>
+                <p>Students</p>
+            </div>
+            <div class="stat-item">
+                <h3>300+</h3>
+                <p>Faculty Members</p>
+            </div>
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Research Centers</p>
+            </div>
+            <div class="stat-item">
+                <h3>95%</h3>
+                <p>Placement Rate</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Campus Life</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Student Portal</a></li>
+                    <li><a href="#">Faculty Directory</a></li>
+                    <li><a href="#">Career Services</a></li>
+                    <li><a href="#">IT Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Admissions</h3>
+                <ul>
+                    <li><a href="#">Apply Now</a></li>
+                    <li><a href="#">Financial Aid</a></li>
+                    <li><a href="#">Visit Campus</a></li>
+                    <li><a href="#">International Students</a></li>
+                    <li><a href="#">Transfer Students</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>123 University Avenue<br>Tech City, TC 12345</p>
+                <p>Phone: (123) 456-7890<br>Email: info@universityoftech.edu</p>
+                <div class="social-links">
+                    <a href="#">F</a>
+                    <a href="#">T</a>
+                    <a href="#">In</a>
+                    <a href="#">YT</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 University of Technology. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Slideshow -->
+    <script src="script.js"></script>
+</body>
+</html>
